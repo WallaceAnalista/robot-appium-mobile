@@ -1,6 +1,5 @@
 *** Settings ***
 Documentation       Navegação específica do iOS: barra de abas inferior.
-Library             AppiumLibrary
 
 
 *** Keywords ***

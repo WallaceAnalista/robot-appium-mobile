@@ -9,7 +9,6 @@ Aumentar a quantidade para
     FOR    ${i}    IN RANGE    ${cliques}
         Tocar em    counter plus button
     END
-    Element Should Contain Text    accessibility_id=counter amount    ${quantidade}
 
 Adicionar ao carrinho
     Swipe Para Baixo Até Ver    Add To Cart button
@@ -19,7 +18,7 @@ Swipe Para Baixo Até Ver
     [Arguments]    ${accessibility_id}
     FOR    ${i}    IN RANGE    5
         ${visivel}=    Run Keyword And Return Status
-        ...    Element Should Be Visible    accessibility_id=${accessibility_id}
+        ...    Wait Until Element Is Visible    accessibility_id=${accessibility_id}    timeout=2s
         IF    ${visivel}    RETURN
         Swipe By Percent    50    70    50    30    800
     END

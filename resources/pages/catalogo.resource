@@ -7,12 +7,13 @@ Aguardar o catálogo
     Deve exibir    products screen
 
 Ordenar por
-    [Documentation]    Opções: nameAsc, nameDesc, priceAsc, priceDesc
+    [Documentation]    Opções exibidas no app: Name - Ascending, Name - Descending,
+    ...                Price - Ascending, Price - Descending
     [Arguments]    ${opcao}
     Tocar em    sort button
-    Deve exibir    sort modal
-    Tocar em    ${opcao}
-    Wait Until Page Does Not Contain Element    accessibility_id=sort modal
+    Wait Until Page Contains    ${opcao}
+    Click Text    ${opcao}
+    Wait Until Element Is Visible    accessibility_id=sort button
 
 Primeiro produto deve ser
     [Arguments]    ${nome}

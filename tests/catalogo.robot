@@ -14,9 +14,9 @@ Catálogo exibe os produtos ordenados por nome
 
 Ordenação dos produtos
     [Template]    Ordenar e validar o primeiro produto
-    nameDesc     Test.allTheThings() T-Shirt
-    priceAsc     Sauce Labs Onesie
-    priceDesc    Sauce Labs Fleece Jacket
+    Name - Descending     Test.allTheThings() T-Shirt
+    Price - Ascending     Sauce Labs Onesie
+    Price - Descending    Sauce Labs Fleece Jacket
 
 Abrir o detalhe de um produto
     Abrir o produto    Sauce Labs Backpack
