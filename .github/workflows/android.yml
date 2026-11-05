@@ -79,7 +79,7 @@ jobs:
           script: robot -V config/capabilities.py:android -d results --name "Android" tests
 
       - name: Publicar relatório
-        if: ${{ !cancelled() }}
+        if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
           name: relatorio-robot-android

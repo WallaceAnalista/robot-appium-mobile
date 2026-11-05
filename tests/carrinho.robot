@@ -3,6 +3,7 @@ Documentation       Carrinho de compras.
 Resource            ../resources/base.resource
 Test Setup          Abrir o app
 Test Teardown       Fechar o app
+Test Timeout        6 minutes
 Test Tags           carrinho
 
 

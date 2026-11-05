@@ -37,6 +37,8 @@ def get_variables(PLATFORM="android"):
             "appium:wdaConnectionTimeout": 300000,
             "appium:simulatorStartupTimeout": 300000,
         }
+        if os.getenv("DEVICE_UDID"):
+            caps["appium:udid"] = os.getenv("DEVICE_UDID")
     else:
         raise ValueError(f"Plataforma não suportada: {PLATFORM}. Use 'android' ou 'ios'.")
 
