@@ -8,3 +8,6 @@ Abrir o menu
 
 Abrir o carrinho
     Tocar em    cart badge
+
+Esconder o teclado
+    Run Keyword And Ignore Error    Hide Keyboard

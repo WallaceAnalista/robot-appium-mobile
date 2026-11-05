@@ -19,8 +19,6 @@ Fazer login
     Ir para o login
     IF    $usuario    Preencher    Username input field    ${usuario}
     IF    $senha    Preencher    Password input field    ${senha}
-    Hide Keyboard If Visible
+    Esconder o teclado
+    Rolar até ver    Login button
     Tocar em    Login button
-
-Hide Keyboard If Visible
-    Run Keyword And Ignore Error    Hide Keyboard
