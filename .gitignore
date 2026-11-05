@@ -1,0 +1,5 @@
+results/
+apps/
+__pycache__/
+*.pyc
+.venv/
