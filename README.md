@@ -68,4 +68,4 @@ O relatório fica em `results/report.html`.
 
 ---
 
-Feito por [**Wallace Rodrigues de Oliveira**](https://www.linkedin.com/in/wallace-rodrigues-de-oliveira-30a815b1/) · Especialista em Testes / QA Sênior
+Feito por [**Wallace Rodrigues de Oliveira**](https://www.linkedin.com/in/wallaceoliveira86/) · Especialista em Testes / QA Sênior
