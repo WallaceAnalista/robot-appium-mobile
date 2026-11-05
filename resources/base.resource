@@ -10,6 +10,11 @@ Resource            pages/produto.resource
 Resource            pages/carrinho.resource
 
 
+*** Variables ***
+# A primeira sessão no simulador iOS é lenta (inicia o WebDriverAgent); o CI do iOS amplia este limite.
+${TEST_TIMEOUT}     6 minutes
+
+
 *** Keywords ***
 Abrir o app
     [Documentation]    Abre uma sessão nova, com o estado do app limpo (noReset=false).

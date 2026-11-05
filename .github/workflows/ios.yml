@@ -79,7 +79,7 @@ jobs:
           npx --yes wait-on --timeout 60000 http-get://127.0.0.1:4723/status
 
       - name: Rodar testes no simulador
-        run: robot -V config/capabilities.py:ios -d results --name "iOS" tests
+        run: robot -V config/capabilities.py:ios -v "TEST_TIMEOUT:15 minutes" -d results --name "iOS" tests
 
       - name: Publicar relatório
         if: ${{ always() }}
